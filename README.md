@@ -42,18 +42,12 @@ npm install
 
 ## 启动项目
 
-1. 启动后端服务：
+1. 启动前后端服务：
 ```bash
 cargo start
 ```
 
-2. 启动前端服务（新终端）：
-```bash
-cd frontend
-npm run dev
-```
-
-3. 访问前端界面：
+2. 访问前端界面：
 打开浏览器访问 `http://localhost:5173`
 
 ## API 接口
