@@ -1,0 +1,17 @@
+/target
+/.cargo/.build
+/models
+/models/**/*.onnx
+/models/**/*.pth
+/models/**/*.mlmodel
+/models/**/*.safetensors
+.DS_Store
+/.mypy_cache
+/.pytest_cache
+/.ropeproject
+/.vscode
+__pycache__
+
+node_modules
+.env
+.venv/

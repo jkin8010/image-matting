@@ -1,0 +1,18 @@
+[alias]
+start = "run --bin start"
+
+[build]
+target-dir = ".cargo/.build"
+
+[target.aarch64-apple-darwin]
+rustflags = ["-C", "link-arg=-undefined", "-C", "link-arg=dynamic_lookup"]
+
+# [target.x86_64-apple-darwin]
+# rustflags = ["-Clink-args=-Wl,-rpath,@loader_path"]
+
+[env]
+# LIBTORCH = "/Users/jkin/workspace/qise-tech/qise-motu-server/.python-venv/lib/python3.9/site-packages/torch"
+# LIBTORCH_INCLUDE = "/Users/jkin/workspace/qise-tech/qise-motu-server/.python-venv/lib/python3.9/site-packages/torch"
+# LIBTORCH_LIB = "/Users/jkin/workspace/qise-tech/qise-motu-server/.python-venv/lib/python3.9/site-packages/torch"
+ARCHS = "armv7 armv7s"
+VALID_ARCHS = "armv6 armv7 armv7s arm64"

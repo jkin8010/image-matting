@@ -1,0 +1,19 @@
+## defaults for _all_ profiles
+[default]
+address = "127.0.0.1"
+limits = { form = "20 MiB", json = "1 MiB" }
+
+## set only when compiled in debug mode, i.e, `cargo build`
+[debug]
+port = 3080
+## only the `json` key from `default` will be overridden; `form` will remain
+limits = { json = "10MiB" }
+
+## set only when the `nyc` profile is selected
+[nyc]
+port = 9001
+
+## set only when compiled in release mode, i.e, `cargo build --release`
+[release]
+port = 12080
+ip_header = false
