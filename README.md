@@ -1,5 +1,13 @@
 # Image Matting
 
+![Rust](https://img.shields.io/badge/Rust-1.70%2B-orange?logo=rust&logoColor=white)
+![ONNX Runtime](https://img.shields.io/badge/ONNX%20Runtime-BiRefNet-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+> **Status（2026-11）**：这是本地抠图的 v0.1 原型（Rust + Rocket + BiRefNet，2025-04 封版）。
+> 产品化版本在 [mopng-desktop](https://github.com/jkin8010/mopng-desktop)：Tauri + React，批量处理、实时预览、多格式导出。
+> 本仓库保留作为算法与 REST 接口的参考实现，不再新增功能；issue 仍会看。
+
 一个基于 Rust 的图像抠图工具，使用 BiRefNet 模型实现高质量的图像抠图功能。
 
 ## 功能特点
